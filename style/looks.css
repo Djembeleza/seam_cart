@@ -10,3 +10,79 @@
     --tertiary-color: #909CEF;
 }
 
+body {
+    background-color: var(--tertiary-color);
+}
+
+.seamless {
+    font-family:  Montserrat;
+    font-style: normal;
+    font-weight: 500;
+}
+/* Section Styles */
+section {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 5%;
+}
+
+img.responsive-img {
+    width: 100%;
+    height: auto;
+    border: 0.4rem solid var(--tertiary-color);
+}
+
+section .heading {
+    text-align: center;
+    margin-bottom: 1.6rem;
+}
+
+section p, section form {
+    padding: 1rem;
+}
+
+form label, form input {
+    width: 100%;
+    display: inline-block;
+}
+
+form label {
+    font-weight: 700;
+}
+
+form input {
+    margin-bottom: 1rem;
+    height: 2rem;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 1rem 1.2rem;
+    font-size: 1.3rem;
+    border-radius: 1.8rem;
+    border-color: var(--primary-color);
+}
+/* End Section Styles */
+
+/* Nav Styles */
+.main-nav {
+    min-height: 10%;
+    background-color: var(--tertiary-color);
+}
+
+.main-nav img {
+    height: 50px;
+}
+
+/* End Nav Styles */
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    min-height: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

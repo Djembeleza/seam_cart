@@ -5,30 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Seam Cart, the art of shopping">
+    <link rel="stylesheet" href="style/looks.css">
+    <script src="https://kit.fontawesome.com/310156fd9b.js" crossorigin="anonymous"></script>
     <title>Seam Cart</title>
 </head>
 
 <body>
     <header>
         <nav class="main-nav">
-            <img src="logo/Standard Logo Files/Original on Transparent.png" height="100" alt="Logo">
+            <img src="logo/Standard Logo Files/Original on Transparent.png" alt="Logo" class="logo">
         </nav>
     </header>
 
     <section class="about-section">
         <about class="div">
-            <h2 class="heading">About Us</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque officiis tempore animi cupiditate officia
-                molestias in provident placeat aspernatur alias perspiciatis libero ipsam consectetur dicta,
-                reprehenderit porro quos ratione distinctio!</p>
+            <!-- <h2 class="heading">About Us</h2> -->
+
+            <img src="images/maria-lin-kim-8RaUEd8zD-U-unsplash.jpg" alt="Groceries" class="responsive-img">
+            <p>Our goal is to give people like you the opportunity to get your groceries without a hassle. Our goal is
+                to bring the
+                supermarket right at your home.<mark class="seamless">SeamCart</mark> allows you to order online from
+                your
+                favorite local
+                grocery
+                store & liquor store
+                and have them delivered to your doorstep in about 60 minutes.
+            </p>
+            <p>
+                The company is based in South Africa. We
+                started the company to free people from
+                tasks that must be done & are not fun so that they can enjoy their free time doing the things they enjoy
+                the most with the people
+                they love the most. Our team works day and night to provide you with the experience, to make grocery
+                shopping <mark class="seamless">seamless</mark>.
+            </p>
         </about>
     </section>
 
     <section class="newsletter-section">
         <div class="newsletter-div">
-            <h2 class="heading">Newletter</h2>
-            <p>Subscribe to our newletter to get the latest news, promotions and updates.</p>
-
+            <h2 class="heading">Newsletter</h2>
+            <p>Subscribe to our newsletter to get the latest news, promotions and updates.</p>
             <form action=""><label for="email">Email Address:</label><input type="email" name="email" id="email">
                 <button type="submit">Subscribe</button>
             </form>
@@ -39,10 +56,14 @@
     <footer>
         <small>
             <p>
-                Copyright
+                SeamCart <i class="fas fa-copyright"></i> <span id="copyright"></span>
             </p>
         </small>
     </footer>
+
+    <script type="text/javascript">
+        document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()));
+    </script>
 </body>
 
 </html>
