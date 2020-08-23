@@ -45,8 +45,8 @@ input{
 }
 
 
-.sub-block{
-  color: rgb(131, 149, 184);
+.sub-block, .big-btn p {
+  color: var(--primary-color);
   font-size: 1.4rem;
   text-align: center;
 }
@@ -73,6 +73,11 @@ section .heading {
   
   color: var(--primary-color);
     margin-bottom: 1.6rem;
+}
+
+section.about-section p {
+  text-align: center;
+  font-size: 1.2rem;
 }
 
 section p, section form {
@@ -123,11 +128,14 @@ footer {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     text-align: center;
-    min-height: 5vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-bottom: 0.6rem;
+}
+
+footer small {padding: 0.6rem;
 }
 
 footer .social-icons {
